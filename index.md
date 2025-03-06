@@ -14,7 +14,7 @@ This site showcases my **projects, teaching materials, and research**.
 - [Paper 2](#) - Analyzing ABC.
 
 ## 📚 Teaching Materials
-# Spring 2025
+### Spring 2025
 - [CS-112](#) - Data Structures
 - [CS-262](#) - Programming Paradigms
 - [GDD-272](#) - OOP with C# and Games
