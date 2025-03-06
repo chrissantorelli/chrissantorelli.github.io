@@ -22,86 +22,83 @@ function updateThemeIcon(theme) {
     icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
 }
 
-// Project Data
-const projects = [
-    {
-        title: 'Research Project 1',
-        description: 'Description of your first research project.',
-        category: 'research',
-        image: 'path/to/image1.jpg',
-        link: '#'
+// Chatbot Functionality
+const chatToggle = document.getElementById('chat-toggle');
+const chatWindow = document.getElementById('chat-window');
+const closeChat = document.getElementById('close-chat');
+const chatInput = document.getElementById('chat-input');
+const sendMessage = document.getElementById('send-message');
+const chatMessages = document.getElementById('chat-messages');
+
+// Knowledge base for the chatbot
+const knowledgeBase = {
+    lecture: {
+        keywords: ['lecture', 'notes', 'slides', 'class', 'course'],
+        response: 'Here are the available lecture materials:\n- Week 1: Introduction\n- Week 2: Core Concepts\n- Week 3: Advanced Topics\n\nYou can find them in the Teaching Materials section.'
     },
-    {
-        title: 'Teaching Resource 1',
-        description: 'Description of your first teaching resource.',
-        category: 'teaching',
-        image: 'path/to/image2.jpg',
-        link: '#'
+    project: {
+        keywords: ['project', 'research', 'work'],
+        response: 'Here are my current projects:\n- Research Project 1\n- Teaching Resource 1\n- Personal Project 1\n\nYou can find more details in the Projects section.'
     },
-    {
-        title: 'Personal Project 1',
-        description: 'Description of your first personal project.',
-        category: 'personal',
-        image: 'path/to/image3.jpg',
-        link: '#'
+    office: {
+        keywords: ['office', 'hours', 'meet', 'appointment', 'schedule'],
+        response: 'My office hours are:\nMonday: 2-4 PM\nWednesday: 10-12 PM\nFriday: 1-3 PM\n\nYou can schedule a meeting through this link: [Your Office Hours Link]'
     }
-    // Add more projects as needed
-];
+};
 
-// Project Filtering
-const filterButtons = document.querySelectorAll('.filter-btn');
-const projectsGrid = document.querySelector('.projects-grid');
-
-// Initialize projects
-function initializeProjects() {
-    displayProjects('all');
-}
-
-function displayProjects(category) {
-    projectsGrid.innerHTML = '';
-    
-    const filteredProjects = category === 'all' 
-        ? projects 
-        : projects.filter(project => project.category === category);
-    
-    filteredProjects.forEach(project => {
-        const projectCard = createProjectCard(project);
-        projectsGrid.appendChild(projectCard);
-    });
-}
-
-function createProjectCard(project) {
-    const card = document.createElement('div');
-    card.className = 'project-card';
-    card.innerHTML = `
-        <div class="project-image">
-            <img src="${project.image}" alt="${project.title}">
-        </div>
-        <div class="project-content">
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <a href="${project.link}" class="project-link">Learn More</a>
-        </div>
-    `;
-    return card;
-}
-
-// Add click event listeners to filter buttons
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Remove active class from all buttons
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        // Add active class to clicked button
-        button.classList.add('active');
-        // Filter projects
-        displayProjects(button.dataset.filter);
-    });
+// Toggle chat window
+chatToggle.addEventListener('click', () => {
+    chatWindow.classList.add('active');
+    chatToggle.style.display = 'none';
 });
 
-// Initialize projects when the page loads
-document.addEventListener('DOMContentLoaded', () => {
-    initializeProjects();
+closeChat.addEventListener('click', () => {
+    chatWindow.classList.remove('active');
+    chatToggle.style.display = 'block';
 });
+
+// Handle message sending
+function sendUserMessage() {
+    const message = chatInput.value.trim();
+    if (message) {
+        addMessage(message, 'user');
+        chatInput.value = '';
+        processMessage(message);
+    }
+}
+
+sendMessage.addEventListener('click', sendUserMessage);
+chatInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        sendUserMessage();
+    }
+});
+
+function addMessage(text, sender) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `message ${sender}`;
+    messageDiv.textContent = text;
+    chatMessages.appendChild(messageDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function processMessage(message) {
+    const lowerMessage = message.toLowerCase();
+    let response = "I'm not sure about that. You can ask me about:\n- Lecture materials\n- Projects\n- Office hours";
+
+    // Check each category in the knowledge base
+    for (const category in knowledgeBase) {
+        if (knowledgeBase[category].keywords.some(keyword => lowerMessage.includes(keyword))) {
+            response = knowledgeBase[category].response;
+            break;
+        }
+    }
+
+    // Add a small delay to make it feel more natural
+    setTimeout(() => {
+        addMessage(response, 'bot');
+    }, 500);
+}
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

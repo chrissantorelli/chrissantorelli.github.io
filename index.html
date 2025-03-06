@@ -23,13 +23,6 @@
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Welcome to My Academic Journey</h1>
-            <p>From Professor to PhD Student: Advancing Research in [Your Field]</p>
-        </div>
-    </header>
-
     <main>
         <section id="about" class="section">
             <div class="container">
@@ -141,6 +134,32 @@
             </div>
         </section>
     </main>
+
+    <div class="chatbot-container">
+        <button id="chat-toggle" class="chat-toggle">
+            <i class="fas fa-comments"></i>
+            <span class="chat-badge">3</span>
+        </button>
+        <div id="chat-window" class="chat-window">
+            <div class="chat-header">
+                <h3>Assistant</h3>
+                <button id="close-chat" class="close-chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot">
+                    Hello! I can help you find lecture materials, projects, and office hours. What would you like to know?
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
