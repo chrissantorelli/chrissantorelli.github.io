@@ -1,5 +1,4 @@
 ---
-title: Programming Paradigms
 layout: default
 ---
 
