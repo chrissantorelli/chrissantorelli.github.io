@@ -15,10 +15,11 @@ This site showcases my **projects, teaching materials, and research**.
 
 ## 📚 Teaching Materials
 ### Spring 2025
-- [CS-112](#) - Data Structures
+- [CS-112](/course_materials/cs112datastructures.md) - Data Structures
 - [CS-262](#) - Programming Paradigms
 - [GDD-272](#) - OOP with C# and Games
 - [ITI-236](#) - Advanced Scripting Concepts
+
 *Materials from previous semesters will be migrated in Summer 2025.*
 
 ## 🚀 Projects
