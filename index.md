@@ -5,7 +5,7 @@ layout: default
 
 # Welcome to My Academic Portfolio 🎓
 
-Hi, I'm **[Your Name]**, a PhD student and former professor.  
+Hi, I'm **Christopher Santorelli**, a PhD student studying Computer Science at Worcester Polytechnic Institute and former professor at Sacred Heart University.  
 This site showcases my **projects, teaching materials, and research**.
 
 ## 🔬 Research
