@@ -26,7 +26,7 @@ This site showcases my **projects, teaching materials, and research**.
 - [CS-262](/course_materials/cs262programmingparadigms.md) - Programming Paradigms
 - [GDD-272](/course_materials/gdd272oopwithcsharpandgames.md) - OOP with C# and Games
 - [ITI-236](/course_materials/iti236advancedscriptingconcepts.md) - Advanced Scripting Concepts
-- [CS/ITI-417]() - Senior Project
+- [CS/ITI-417]() - Senior Project Implementation
 
 *Materials from previous semesters will be migrated in Summer 2025.*
 
