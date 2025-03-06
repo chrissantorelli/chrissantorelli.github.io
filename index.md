@@ -19,6 +19,7 @@ This site showcases my **projects, teaching materials, and research**.
 - [CS-262](#) - Programming Paradigms
 - [GDD-272](#) - OOP with C# and Games
 - [ITI-236](#) - Advanced Scripting Concepts
+*Materials from previous semesters will be migrated in Summer 2025.*
 
 ## 🚀 Projects
 - [Project A](#) - Open-source tool for researchers.
