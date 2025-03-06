@@ -6,10 +6,6 @@
 
 # Data Structures
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 # 1. Review of Structured Programming
 
 ## What is common across programming languages?
