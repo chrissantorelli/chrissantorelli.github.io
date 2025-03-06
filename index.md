@@ -5,7 +5,8 @@ layout: default
 
 # Welcome to My Academic Portfolio 🎓
 
-Hi, I'm **Christopher Santorelli**, a PhD student studying Computer Science at Worcester Polytechnic Institute and former professor at Sacred Heart University.  
+Hi, I'm **Christopher Santorelli**, a PhD student studying Computer Science at Worcester Polytechnic Institute (WPI) and former professor at Sacred Heart University.  
+
 This site showcases my **projects, teaching materials, and research**.
 
 ## 🔬 Research
@@ -13,8 +14,11 @@ This site showcases my **projects, teaching materials, and research**.
 - [Paper 2](#) - Analyzing ABC.
 
 ## 📚 Teaching Materials
-- [Course 101](#) - Introduction to Subject.
-- [Course 202](#) - Advanced Topics.
+# Spring 2025
+- [CS-112](#) - Data Structures
+- [CS-262](#) - Programming Paradigms
+- [GDD-272](#) - OOP with C# and Games
+- [ITI-236](#) - Advanced Scripting Concepts
 
 ## 🚀 Projects
 - [Project A](#) - Open-source tool for researchers.
