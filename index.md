@@ -2,6 +2,12 @@
 title: My Academic Portfolio
 layout: default
 ---
+<style>
+  nav.site-nav {
+    display: none !important;
+  }
+</style>
+
 
 # Welcome to My Academic Portfolio 🎓
 
