@@ -15,5 +15,18 @@ Hi, I'm **Christopher Santorelli**, a PhD student studying Computer Science at W
 
 ## 🔬 Research
 <!-- - [ Few-shot is all you need... but RAG is the Cherry on Top]() - *Eamon Worden, Sami Baral, Daniel Yu, Christopher Santorelli and Neil Heffernan*-->
-- [Automated Feedback in Math Education: A Comparative Analysis of LLMs for Open-Ended Responses](https://arxiv.org/abs/2411.08910v1) - *Sami Baral, Eamon Worden, Wen-Chiang Lim, Zhuang Luo, Christopher Santorelli, Ashish Gurung, Neil Heffernan.* This study evaluates the effectiveness of Large Language Models (LLMs) in providing automated feedback for middle-school math education by comparing Llama (Mistral), SBERT-Canberra, and GPT-4 in scoring accuracy and qualitative feedback, using teacher judgments to assess their performance and potential for personalized learning.
+### Conference Papers
+[C.1] Sami Baral, Eamon Worden, Wen-Chiang Lim, Zhuang Luo, **Christopher Santorelli**, and Ashish Gurung.  
+“Automated Assessment in Math Education: A Comparative Analysis of LLMs for Open-Ended Responses.”  
+In *Proceedings of the 17th International Conference on Educational Data Mining*, 2024, pp. 732–737.  
+[pdf](https://doi.org/10.5281/zenodo.12729932) &#124; [bib](#c1-bib)
+
+<a id="c1-bib"></a>
+
+```IEEE
+[1] Sami Baral, Eamon Worden, Wen-Chiang Lim, Zhuang Luo, **Christopher Santorelli**, and Ashish Gurung,
+“Automated Assessment in Math Education: A Comparative Analysis of LLMs for Open-Ended Responses,”
+in *Proceedings of the 17th International Conference on Educational Data Mining*, Atlanta, Georgia, USA,
+Jul. 2024, pp. 732–737. doi: 10.5281/zenodo.12729932.
+```
 
