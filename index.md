@@ -17,4 +17,4 @@ Hi, I'm **Christopher Santorelli**, a PhD student studying Computer Science at W
 [C.1] Sami Baral, Eamon Worden, Wen-Chiang Lim, Zhuang Luo, **Christopher Santorelli**, and Ashish Gurung.  
 “Automated Assessment in Math Education: A Comparative Analysis of LLMs for Open-Ended Responses.”  
 In *Proceedings of the 17th International Conference on Educational Data Mining*, 2024, pp.&nbsp;732–737.  
-[pdf](https://doi.org/10.5281/zenodo.12729932) &#124; [bib](assets/bib/C1.bib)
+[pdf](https://doi.org/10.5281/zenodo.12729932) &#124; [bib](https://educationaldatamining.org/edm2024/proceedings/2024.EDM-posters.80/2024.EDM-posters.80.bib)
